@@ -1,0 +1,6 @@
+ideas: 
+- field to show current zoom level (and/or min/max available zoom)
+- initial map load of current user location
+- web workers to offload intensive computations
+- ability to see raw OSM XML 
+- ability to highlight specific features
