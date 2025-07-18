@@ -26,10 +26,24 @@ const URLS_TO_CACHE = [
     './style.css',
     './index.html',
     './favicon.ico',
+    './indexedDB.js',
+    './parse-data.js',
+    './clear-data.js',
+    './render-main.js',
+    './render-ways.js',
     './log-message.js',
+    './mouse-events.js',
     './registration.js',
+    './zoom-buttons.js',
+    './render-nodes.js',
+    './render-rules.js',
+    './initialisation.js',
     './service-worker.js',
-    './connection-status.js'
+    './event-listeners.js',
+    './form-submission.js',
+    './input-validation.js',
+    './connection-status.js',
+    './render-relations.js'
 ];
 
 /**
