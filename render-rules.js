@@ -1,3 +1,22 @@
+/**
+ * @fileoverview
+ * Shared render rules implementation for styling map elements.
+ *
+ * This script defines the style rules for the map elements based on their tags, to be 
+ * used in the rendering for both ways and relations, for consistency. Each rule includes a 
+ * condition function and a styles object that states the way the element should be rendered.
+ *
+ * @constant {Array<Object>} renderRules - The array of style rules for rendering map elements.
+ * 
+ * Each rule object contains:
+ *   - condition {Function}: A function that accepts a map element and returns a boolean indicating
+ *     if the rule should be applied.
+ *   - styles {Object}: An object defining the rendering styles, including:
+ *       - fillStyle {string}: The fill color.
+ *       - strokeStyle {string}: The line color.
+ *       - shouldFill {boolean}: Indicates if the element should be filled or not.
+ *       - zIndex {number}: Indicates draw order priority (1=lowest, 4=highest).
+ */
 export const renderRules = [
     {
         // key: building, value: N/A
