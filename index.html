@@ -16,7 +16,11 @@
 
     <main>
         <div class="columns">
+
+            <!-- left-column: input-form and utilities -->
             <div class="column column-left">
+
+                <!-- obtains min and max lon and lat for osm bounding-box -->
                 <section class="input-form">
                     <form id="lon-lat-form">
                         <label>Minimum Longitude:
@@ -36,39 +40,49 @@
                                 max="90" />
                         </label>
 
+                        <!-- utilities related to the input-form functionality -->
                         <button id="clearData" type="button">Clear Map</button>
                         <button id="randomBoundingBox" type="button">Random</button>
                         <button id="loadData" type="submit">Load</button>
                     </form>
                 </section>
 
+                <!-- outputs error messages during application execution -->
                 <p id="status">[Status]: No errors.</p>
 
+                <!-- outputs the status of the network connection -->
                 <p id="connectionStatus">[Network]: Checking connection...</p>
 
+                <!-- toggle-buttons to show or hide nodes, ways, and relations -->
                 <div class="toggleData">
                     <button id="toggleNodes">Show Nodes</button>
                     <button id="toggleWays">Show Ways</button>
                     <button id="toggleRelations">Show Relations</button>
                 </div>
 
+                <!-- outputs the number of: nodes, ways, and relations within the database -->
                 <section class="data-counts">
                     <p>Nodes: <span class="padded-count" id="nodesCount">000000000000</span></p>
                     <p>Ways: <span class="padded-count" id="waysCount">000000000000</span></p>
                     <p>Relations: <span class="padded-count" id="relationsCount">000000000000</span></p>
                 </section>
 
+                <!-- hint to provide explanation of functionality -->
                 <p id="hint">[Hint]: Press the 'random' button to load in a random bounding box.</p>
             </div>
 
+            <!-- right-column: map output -->
             <section class="map-output">
+                <!-- the canvas element to display the map -->
                 <canvas id="osmCanvas" width="1520" height="930"></canvas>
 
+                <!-- zoom in and zoom out buttons for the canvas -->
                 <div class="zoomButtons">
                     <button id="zoomIn">+</button>
                     <button id="zoomOut">-</button>
                 </div>
             </section>
+
         </div>
     </main>
 
