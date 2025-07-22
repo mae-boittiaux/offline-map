@@ -34,7 +34,6 @@ header {
     text-align: left;
     color: var(--dark-grey);
     background-color: var(--white);
-    border-bottom: 2px solid var(--dark-grey);
 }
 
 body {
