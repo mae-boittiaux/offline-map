@@ -23,10 +23,10 @@ export function setupConnectionStatus() {
 
     function updateStatus() {
         if (navigator.onLine) {
-            connectionStatus.textContent = "[Network]: Online";
+            connectionStatus.textContent = "[Network]: Online.";
             logMessage(MessageScope.CONNECTION_STATUS, MessageOutput.CONSOLE, "Online");
         } else {
-            connectionStatus.textContent = "[Network]: Offline";
+            connectionStatus.textContent = "[Network]: Offline.";
             logMessage(MessageScope.CONNECTION_STATUS, MessageOutput.CONSOLE, "Offline");
         }
     }
