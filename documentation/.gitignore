@@ -1,0 +1,54 @@
+# Auxiliary and log files created by LaTeX / TeX engines
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.acn
+*.glo
+*.ist
+*.glg
+*.gls
+*.glsdefs
+
+# PDF and other output formats
+*.pdf
+
+# Minted folder
+_minted-*
+
+# Backup files
+*~
+*.bak
+
+# LaTeX generated index files
+*.idx
+*.ilg
+*.ind
+
+# latexmk specific files
+*.dvi
+*.bbl
+*.blg
+
+# Intermediate PostScript files
+*.ps
+
+# Other intermediate or temp files
+*.tmp
+*.swp
+*.swo
+
+# Output from glossary and acronym packages
+*.acr
+*.alg
+
+# Editor-specific files
+.vscode/
+.idea/
+
+# Additional files
+*.bcf
+*.run.xml
